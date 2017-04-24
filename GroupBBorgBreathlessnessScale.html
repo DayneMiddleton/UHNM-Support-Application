@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NHS Application</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="NHS Application">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NHS Application">
+    <meta name="application-name" content="NHS Application">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <div class="app app__layout">
+    <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">How Breathless Are You</span>
+    
+    </header>
+
+    <div class="menu">
+      <div class="menu__header">
+        <img src="images/NHS%20Header.jpeg" alt="NHS Logo" longdesc="AppmenuNHSLogo" class="NHSHeader"> 
+        </div>
+      <ul class="menu__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HealthyLivingScreen.html">Healthy Living</a></li>
+        <li><a href="Prehabilitation.html">Prehabilitation Process</a></li>
+        <li><a href="InformationScreen.html">Information Section</a></li>
+        <li><a href="">User Profile</a></li>
+        <li><a href="AboutApplication.html">About Application</a></li>
+          <li><a href="CopyrightInfo.html">Copyright Info</a></li>
+        </ul>
+          </div>
+    <div class="menu__overlay"></div>
+
+    <div class="app__content">
+    
+<img src="images/NHS%20UHNM%20Logo.jpg" alt="NHS Logo" long desc="NHSUniversityHospitalNorthMidlandsLogo" class="NHSLogo">
+    
+<ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="GroupBExercises.html">Group B Exercise</a></li>
+                    <li><a href="GroupBBorgBreathlessnessScale.html">Borg Breath Scale</a></li>
+                    </ul>
+        
+<h1>How Breathless Are You</h1>
+    
+<p>How breathless were you when you were working at your hardest, whilst you were exercising?</p>
+        
+<h3>Select your answer below :</h3>
+        
+<img src="images/BorgScale.PNG" alt="Borg Scale" Longdesc="The Breathlessness Borg Scale" class="Borg">
+
+<p>If Borg 0-3 please increase the amount of time of each exercise by 15 seconds.</p>
+<p>If Borg 4-5 maintain current programme</p>
+<p>If Borg is 6-10 please continue to do each activity for one minute but increase the rest period by 15 seconds</p>
+     
+<div class="form-style-2">
+<form action="">
+  <input type="radio" name="breathless" value="Breath Value">•	No breathlessness at all 	(0)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Just noticeable				(1)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Very slight					(2)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Slight						(3)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Slight / Moderate			(4)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Moderate					(5)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Some difficulty				(6)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Moderately severe 			(7)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Severe						(8)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Very severe					(9)<br>
+  <input type="radio" name="breathless" value="Breath Value">•	Panic level - Maximum shortness of breath	(10) <br>
+  <label><span>&nbsp;</span><input type="submit" value="Submit" onclick="aa();" /></label>
+</form>
+</div>            
+        
+
+
+    
+  <!-- JS Files  -->
+  <script type="text/javascript">
+  //If serviceWorker supports, then register it.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+    .then(function(registration) {
+      console.info('Service worker is registered!');
+    })
+    .catch(function(error) {
+      console.error('Service worker failed ', error);
+    });
+  }
+</script>
+<script type="text/javascript">
+function aa()
+{
+var xhmlhttp;
+xmlhttp=new XMLHttpRequest();
+xmlhttp.open("GET","Breath.php?bth="+document.getElementId("Breath").value,false);
+xmlhtt.send(null);
+    
+}
+</script>
+  <script src="./js/offline.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/menu.js"></script>
+             </div>
+      </div>
+  </body>
+    
+</html>

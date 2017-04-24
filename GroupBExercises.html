@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NHS Application</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="NHS Application">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NHS Application">
+    <meta name="application-name" content="NHS Application">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <div class="app app__layout">
+    <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">Group B Exercises</span>
+    
+    </header>
+
+   <div class="menu">
+      <div class="menu__header">
+        <img src="images/NHS%20Header.jpeg" alt="NHS Logo" longdesc="AppMenuNHSLogo" class="NHSHeader"> 
+        </div>
+      <ul class="menu__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HealthyLivingScreen.html">Healthy Living</a></li>
+        <li><a href="Prehabilitation.html">Prehabilitation Process</a></li>
+        <li><a href="InformationScreen.html">Information Section</a></li>
+        <li><a href="">User Profile</a></li>
+        <li><a href="AboutApplication.html">About Application</a></li>
+          <li><a href="CopyrightInfo.html">Copyright Info</a></li>
+       </ul>
+          </div>
+    <div class="menu__overlay"></div>
+
+    <div class="app__content">
+    
+<img src="images/NHS%20UHNM%20Logo.jpg" alt="NHS Logo" longdesc="NHSUniversityHospitalNorthMidlandsLogo" class="NHSLogo">
+
+<ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Prehabilitation.html">Prehabilitation</a></li>
+                    <li><a href="Exercisepage.html">Select Exercise Group</a></li>
+                    <li><a href="GroupBExercises.html">Exercise Group B</a></li>
+                    </ul>
+
+<h1> Group B Exercises</h1>
+
+    
+<h2>Follow the order of exercises and you have 45 seconds with one minute rest for each exercise.</h2>
+
+<h3>After finishing the last exercise you do, then please proceed to the Borg Breathless Questionnaire</h3>   
+           
+        
+<a href="GroupBSquats.html"><img src="images/Icon/Squats.png" alt="Group B Squats" longdesc="SqautsIcon" class="ChooseExercise"/></a>
+<a href="GroupBLunge.html"><img src="images/Icon/Lunge.png" alt="Group B Lunge" longdesc="LungeIcon" class="ChooseExercise"/></a>
+<a href="GroupBStepUp.html"><img src="images/Icon/Step%20Up.png" alt="Group B Step Up" longdesc="StepUpIcon" class="ChooseExercise"/></a>
+<a href="GroupBCalfRaises.html"><img src="images/Icon/Calf%20Raises.png" alt="Group B Calf Raises" longdesc="CalfRaisesIcon" class="ChooseExercise"/></a>
+<a href="GroupBBoxing.html"><img src="images/Icon/Boxing.png" alt="Group B Boxing" longdesc="BoxingIcon" class="ChooseExercise"/></a>
+<a href="GroupBOverheadExercises.html"><img src="images/Icon/Overhead%20Exercises.png" alt="Group B Overhead Exercises" longdesc="OverheadExercises" class="ChooseExercise"/></a>
+<a href="GroupBTorsoTwists.html"><img src="images/Icon/Torso%20Twists.png" alt="Group B Torso Twists" longdesc="TorsoTwistsIcon" class="ChooseExercise"/></a>
+<a href="GroupBBorgBreathlessness%20Scale.html"><img src="images/Icon/BorgBreathlessnessScale.png" alt="Borg Breathlessness Scale" longdesc="BorgBreathlessnessScaleIcon" class="ChooseExercise"/></a>   
+        
+        
+  <!-- JS Files  -->
+  <script type="text/javascript">
+  //If serviceWorker supports, then register it.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+    .then(function(registration) {
+      console.info('Service worker is registered!');
+    })
+    .catch(function(error) {
+      console.error('Service worker failed ', error);
+    });
+  }
+  </script>
+  <script src="./js/offline.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/menu.js"></script>
+         </div>
+      </div>
+  </body>
+    
+</html>

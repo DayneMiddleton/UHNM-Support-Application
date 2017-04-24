@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NHS Application</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="NHS Application">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NHS Application">
+    <meta name="application-name" content="NHS Application">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <div class="app app__layout">
+    <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">Group C Torso Twists Exercise</span>
+    
+    </header>
+
+    <div class="menu">
+      <div class="menu__header">
+        <img src="images/NHS%20Header.jpeg" alt="NHS Logo" Longdesc="AppmenuNHSLogo" class="NHSHeader"> 
+        </div>
+      <ul class="menu__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HealthyLivingScreen.html">Healthy Living</a></li>
+        <li><a href="Prehabilitation.html">Prehabilitation Process</a></li>
+        <li><a href="InformationScreen.html">Information Section</a></li>
+        <li><a href="">User Profile</a></li>
+        <li><a href="AboutApplication.html">About Application</a></li>
+          <li><a href="CopyrightInfo.html">Copyright Info</a></li>
+        </ul>
+          </div>
+    <div class="menu__overlay"></div>
+
+    <div class="app__content">
+    
+<img src="images/NHS%20UHNM%20Logo.jpg" alt="NHS Logo" longdesc="NHSUniversityHospitalNorthMidlandsLogo" class="NHSLogo">
+        
+<ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="GroupCExercises.html">Group C Exercise</a></li>
+                    <li><a href="GroupCTorsoTwists.html">Group C Torso Twists</a></li>
+                    </ul>
+    
+
+<h1>Torso Twists Exercise</h1>
+        
+<img src="images/Twist1.png" alt="Twist 1" longdesc="Twist1ImageInstruction" class="Exercise">
+<li>Sit on the chair.</li>
+        
+<li>Put your feet flat on the floor in front of you.</li>
+        
+<li>Cross your hands over your chest.</li>
+<img src="images/Twist2.png" alt="Twist 2" longdesc="Twist2ImageInstruction" class="Exercise">
+<li>Turn your body as far to the RIGHT as possible, ensuring your buttocks remains on the seat and your hips are straight.</li>
+<img src="images/Twist1.png" alt="Twist 1" longdesc="Twist1ImageInstruction" class="Exercise">
+<li>Return to the middle.</li>
+<img src="images/TwistL.png" alt="Twist L" longdesc="TwistLImageInstruction" class="Exercise">
+        
+<li>Turn your body as far to the RIGHT as possible.</li>
+        
+<li>Return to the middle.</li>
+
+<li>Repeat for one minute.</li>
+    
+<p>Your exercises are now complete.</p>
+
+<p>Well done!!</p>
+        
+        
+
+  <!-- JS Files  -->
+  <script type="text/javascript">
+  //If serviceWorker supports, then register it.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+    .then(function(registration) {
+      console.info('Service worker is registered!');
+    })
+    .catch(function(error) {
+      console.error('Service worker failed ', error);
+    });
+  }
+  </script>
+  <script src="./js/offline.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/menu.js"></script>
+         </div>
+      </div>
+  </body>
+    
+</html>
